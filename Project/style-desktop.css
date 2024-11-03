@@ -11,19 +11,17 @@
 
 .background-color {
     background-color: #FAF4F2;
+    font-family: "Poppins", sans-serif;
 }
 
 .width-1140 {
     width: 1140px;
     margin: 0 auto;
-    font-family: "Poppins", sans-serif;
-    background-color: #FAF4F2;
 }
 
 .width-1440 {
     width: 1440px;
     margin: 0 auto;
-    font-family: "Poppins", sans-serif;
     background-color: #FF7315;
 }
 
@@ -35,7 +33,7 @@ section {
 }
 
 /*--------------------------Logo--------------------------*/
-header {
+header h3 {
     background-color: #FAF4F2;
     color: #F9F9F9;
     font-size: 18px;
@@ -78,14 +76,13 @@ header {
 
 .biography .social-media{
     width: 240px;
-    height: 48px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 16px;
 }
 
-.social-media-link a{
+.social-media a{
     height: 48px;
     display: block;
     cursor: pointer;
@@ -99,25 +96,9 @@ header {
     margin-top: 25px;
 }
 
-.biography .button__send-request {
-    width: 151px;
+.biography .buttons button{
     height: 55px;
     border-radius: 10px;
-    background-color: #FF2950;
-    color: #F9F9F9;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    cursor: pointer;
-}
-
-.biography .button__download-cv {
-    width: 153px;
-    height: 55px;
-    border-radius: 10px;
-    border: 2px solid #FF9B70;
-    color: rgba(34, 34, 34, 0.50);
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -125,6 +106,23 @@ header {
     cursor: pointer;
     transition: 1s;
 }
+
+.biography .button__send-request {
+    width: 151px;
+    background-color: #FF2950;
+    color: #F9F9F9;
+}
+
+.biography .button__send-request:hover{
+    background-color: #FF9B70;
+}
+
+.biography .button__download-cv {
+    width: 153px;
+    border: 2px solid #FF9B70;
+    color: rgba(34, 34, 34, 0.50);
+}
+
 .biography .button__download-cv:hover{
     background-color: #FF2950;
     color: #F9F9F9;
@@ -158,11 +156,13 @@ header {
     margin-bottom: 16px;
 }
 
-.completed-projects__text p:nth-child(2) {
+.completed-projects__text p{
     color: #F9F9F9;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
+}
+.completed-projects__text p:nth-child(2) {
     line-height: 36px; /* 150% */
 }
 
@@ -177,10 +177,6 @@ header {
 
 .completed-projects__text p:nth-child(4) {
     width: 570px;
-    color: #F9F9F9;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 45px; /* 187.5% */
 }
 
@@ -251,6 +247,7 @@ header {
 
 .portfolio {
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .portfolio h2 {
@@ -354,7 +351,7 @@ header {
     border-radius: 15px;
     background: #F9F9F9;
     box-shadow: 0 20px 40px 0 rgba(255, 115, 21, 0.10);
-    transition: 1.3s;
+    transition: 1.2s;
 }
 
 .price-plans__card h4 {
@@ -390,7 +387,7 @@ header {
     font-weight: 700;
     line-height: 123.6%; /* 39.552px */
     text-transform: capitalize;
-    transition: 1.3s;
+    transition: 1.2s;
 }
 
 .price-plans__card .cost h5 {
@@ -408,7 +405,6 @@ header {
 
 .price-plans__card .plan-benefits {
     margin-left: 48px;
-
 }
 
 .price-plans__card .plan-benefits ul {
@@ -469,17 +465,17 @@ header {
 
     & h4 {
         background-color: #FF7315;
-        transition: 1.5s;
+        transition: 1.4s;
     }
 
     & h3 {
         color: #F9F9F9;
-        transition: 1.5s;
+        transition: 1.4s;
     }
 
     & h5 {
         color: #F9F9F9;
-        transition: 1.5s;
+        transition: 1.4s;
     }
 }
 
